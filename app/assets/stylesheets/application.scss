@@ -28,6 +28,17 @@
   background-color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   max-height: 25%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-weight: 800;
+}
+
+.text-container {
+  width: 35%;
 }
 
 .img-rnd {
@@ -62,6 +73,15 @@
   border: 1px solid #fff;
   width: 90%;
   padding: 20px;
+}
+
+.amount {
+  align-items: flex-end;
+}
+
+.background-img {
+  margin: 4rem 0;
+  max-width: 100%;
 }
 
 nav {

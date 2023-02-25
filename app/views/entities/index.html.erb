@@ -5,11 +5,14 @@
       <div class="img-container">
         <%= image_tag("#{rand(1..10)}.webp", class:"img-rnd", alt: "...") %>
       </div>
-      <div>
+      <div class="text-container">
         <div>
           <h5><%= entity.name%></h5>
         <small> Created at <%= time_ago_in_words(entity.created_at) %> </small></p>
         </div>
+      </div>
+      <div class="amount">
+        <p> <%= entity.amount%> </p>
       </div>
     </div>
   <%end%>

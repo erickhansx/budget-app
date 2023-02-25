@@ -1,4 +1,5 @@
 class EntitiesController < ApplicationController
+  before_action :authenticate_user!
   before_action :user_groups, only: [:index, :show]
   def show
     @entity = Entity.where(group_id: params[:id])
