@@ -14,3 +14,61 @@
  *= require_self
  */
 @import 'bootstrap';
+
+.container-custom {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 100vh;
+}
+
+.card-custom {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-height: 25%;
+}
+
+.img-rnd {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.img-container {
+  max-width: 25%;
+  margin-right: 5px;
+}
+
+.btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5fb523;
+  color: #fff;
+  position: fixed;
+  bottom: 1px;
+  z-index: 9999;
+  min-width: 100%;
+  min-height: 20%;
+  text-align: center;
+  font-size: 2rem;
+  border: #fff;
+}
+
+.btn-custom {
+  background-color: #5fb523;
+  color: #fff;
+  border: 1px solid #fff;
+  width: 90%;
+  padding: 20px;
+}
+
+nav {
+  background-color: #3778c2;
+}
+
+body {
+  height: 100vh;
+  background-color: #e4e4e4;
+}
