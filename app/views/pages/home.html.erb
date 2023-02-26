@@ -1,9 +1,15 @@
 
-<div>
-  <img class="background-img" src="<%= asset_path('logo-no-background.png') %>" alt="Logo">
-</div>
-<div class="btn-div">
-<%= link_to 'Sign in', new_user_session_path, class: "btn-custom" %>
-</div>
+
+
+<% if user_signed_in? %>
+  <%= render 'groups/list' %>
+<% else %>
+  <div class='hp-img'>
+    <img class="background-img" src="<%= asset_path('logo-no-background.png') %>" alt="Logo">
+  </div>
+  <div class="btn-div">
+    <%= link_to 'Sign in / Sign up', new_user_session_path, class: "btn-custom" %>
+  </div>
+<%end%>
 
 <%#= link_to 'Sign out', destroy_user_session_path, data: {turbo_method: :delete} %>

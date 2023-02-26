@@ -42,12 +42,13 @@
 }
 
 .img-rnd {
-  max-width: 100%;
+  max-width: 50%;
   max-height: 100%;
 }
 
 .img-container {
   max-width: 25%;
+  max-height: 25%;
   margin-right: 5px;
 }
 
@@ -73,6 +74,7 @@
   border: 1px solid #fff;
   width: 90%;
   padding: 20px;
+  text-decoration: none;
 }
 
 .amount {
@@ -84,6 +86,12 @@
   max-width: 100%;
 }
 
+.hp-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 nav {
   background-color: #3778c2;
 }
@@ -91,4 +99,12 @@ nav {
 body {
   height: 100vh;
   background-color: #e4e4e4;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 50%;
 }

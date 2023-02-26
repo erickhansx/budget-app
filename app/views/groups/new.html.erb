@@ -1,0 +1,17 @@
+<div class="container">
+
+<%= form_with url: groups_path, method: :post, local: true do |form| %>
+  <%= form.fields_for :group do |group_form| %>
+    <div class="mb-3">
+      <%= group_form.label :name, class: 'form-label', for: 'name' %>
+      <%= group_form.text_field :name, class: 'form-control', id: 'name', 'aria-describedby': 'emailHelp' %>
+    </div>
+    <div class="mb-3">
+      <%= group_form.label :icon, class: 'form-label', for: 'exampleInputPassword1' %>
+      <%= group_form.text_field :icon, class: 'form-control', id: 'exampleInputPassword1' %>
+    </div>
+  <% end %>
+  <%= form.submit 'Submit', class: 'btn btn-primary' %>
+<% end %>
+
+</div>

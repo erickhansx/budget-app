@@ -1,0 +1,24 @@
+
+<div class="container container-custom">
+  <% @entities.each do |entity| %>
+    <%= link_to entity_path(entity) do %>
+      <div class="card-custom">
+        <div class="img-container">
+          <%= image_tag(entity.group.icon) %>
+        </div>
+        <div class="text-container">
+          <div>
+            <h5><%= entity.name %></h5>
+            <small> Created at <%= time_ago_in_words(entity.created_at) %> </small></p>
+          </div>
+        </div>
+        <div class="amount">
+          <p> <%= entity.amount %> </p>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>
+<div class="btn-div">
+  <%= link_to "New Entity", new_entity_path, class: "btn-custom" %>
+</div>
