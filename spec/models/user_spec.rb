@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  subject { User.create(username: "john", email: "john@example.com", password: "password") }
+  subject { User.create(username: 'john', email: 'john@example.com', password: 'password') }
   before { subject.save }
 
   it 'name should be present' do
@@ -17,5 +17,4 @@ RSpec.describe User, type: :model do
   it 'validates the email' do
     expect(subject.email).to match(/\A[\w+-.]+@[a-z\d-]+(.[a-z]+)*.[a-z]+\z/i)
   end
-  
 end

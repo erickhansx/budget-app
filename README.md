@@ -45,6 +45,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [PocketPal](https://pocketpal.onrender.com/)
+- [Video](https://drive.google.com/file/d/1wXQctD8fxHFhkzR3kd55fuuhozXjljYA/view?usp=sharing)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 

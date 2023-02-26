@@ -7,6 +7,7 @@ class EntitiesController < ApplicationController
   def show; end
 
   def index
+    session[:return_to] = request.original_url
     @entities = Entity.where(user_id: current_user.id)
   end
 
