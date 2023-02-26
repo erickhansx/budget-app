@@ -3,7 +3,11 @@
     <%= link_to group_path(group) do %>
       <div class="card-custom">
         <div class="img-container">
+        <% if group.icon != nil %>
           <%= image_tag(group.icon) %>
+        <% else %>
+          <%= image_tag("logo-no-background.png") %>
+        <% end %>
         </div>
         <div class="text-container">
           <div>

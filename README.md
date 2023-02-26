@@ -16,9 +16,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# Budget-App <a name="about-project"></a>
+# PocketPal <a name="about-project"></a>
 
-**Budget-App** is a full-stack web application developed using Ruby on Rails. It provides user authentication with login and logout functionality, allowing users to securely access their data. With Budget-App, users can add categories to organize their expenses and incomes, and then add transactions for each category to keep track of their spending. The application also features a modern and visually appealing design that enhances the user experience. The design was created by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella), a highly acclaimed designer whose portfolio is showcased on Behance.
+**PocketPal** is a full-stack web application developed using Ruby on Rails. It provides user authentication with login and logout functionality, allowing users to securely access their data. With Budget-App, users can add categories to organize their expenses and incomes, and then add transactions for each category to keep track of their spending. The application also features a modern and visually appealing design that enhances the user experience. The design was created by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella), a highly acclaimed designer whose portfolio is showcased on Behance.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -43,6 +43,8 @@
 - **Implemented design from the sneak peek wireframe**
 
 ## 🚀 Live Demo <a name="live-demo"></a>
+
+- [PocketPal](https://pocketpal.onrender.com/)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
