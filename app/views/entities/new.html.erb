@@ -1,0 +1,25 @@
+<h1>This is the Entity new</h1>
+
+<div class="container">
+  <%= form_with(model: @entity, data: { turbo: false }, local: true) do |form| %>
+    <div class="mb-3">
+      <%= form.label :name, class: 'form-label' do %>
+        Name:
+        <%= form.text_field :name, class: 'form-control', id: 'exampleInputEmail1', 'aria-describedby': 'emailHelp' %>
+      <% end %>
+    </div>
+    <div class="mb-3">
+      <%= form.label :amount, class: 'form-label' do %>
+        Amount
+        <%= form.number_field :amount, class: 'form-control' %>
+      <% end %>
+    </div>
+    <% @groups.each do |group| %>
+      <div class="form-check form-switch">
+        <%= form.check_box :group_ids, { multiple: true, id: "group_#{group.id}", class: "form-check-input" }, group.id, nil %>
+        <%= form.label "group_ids_#{group.id}", group.name, class: 'form-check-label', for: "group_#{group.id}" %>
+      </div>
+    <% end %>
+    <%= form.submit 'Save', class: 'btn btn-primary' %>
+  <% end %>
+</div>
