@@ -1,4 +1,26 @@
-<h1>This is the groups index</h1>
 
-
-<% render 'list' %>
+<div class="container container-custom">
+  <% @groups.each do |group| %>
+    <%= link_to group_path(group) do %>
+      <div class="card-custom">
+        <div class="img-container">
+        <% if group.icon != nil %>
+          <%= image_tag(group.icon) %>
+        <% else %>
+          <%= image_tag("logo-no-background.png") %>
+        <% end %>
+        </div>
+        <div class="text-container">
+          <div>
+            <h5><%= group.name %></h5>
+            <small> Created at <%= time_ago_in_words(group.created_at) %> </small></p>
+          </div>
+        </div>
+        <h2> <%= group.entities.count %> </h2>
+      </div>
+    <% end %>
+  <% end %>
+</div>
+<div class="btn-div">
+  <%= link_to "New Group", new_group_path, class: "btn-custom" %>
+</div>
